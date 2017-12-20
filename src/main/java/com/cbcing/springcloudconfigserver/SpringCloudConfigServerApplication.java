@@ -2,12 +2,14 @@ package com.cbcing.springcloudconfigserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * 构建Spring Cloud Config : 分布式配置中心
  */
 @EnableConfigServer
+@EnableDiscoveryClient
 @SpringBootApplication
 public class SpringCloudConfigServerApplication {
 
